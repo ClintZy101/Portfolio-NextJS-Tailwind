@@ -9,35 +9,35 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className="bg-dark-bg z-0">
-                    {/* HEADER */}
+      {/* HEADER */}
       <Head>
         <title>My Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className=" relative">
-        <Header />
+      <div className=" relative h-screen overflow-hidden">
 
-                       {/* LANDING  */}
-        <main className=" flex-col relative text-center">
-          <div className=" absolute  w-screen z-50 mt-10 sm:mt-20 lg:mt-24 ">
-            <Introduction />
-            <Link href="/contactme">
-              <button class="transition duration-300 ease-in-out bg-transparent hover:bg-yellow-500 text-yellow-600 font-semibold hover:text-white py-2 px-4 border border-yellow-600 hover:border-transparent rounded-sm mt-8 text-2xl lg:4xl">
-                Let's Talk
-             </button>
-            </Link>
+        <Header className=""/>
 
+                                {/* LANDING  */}
+        <main className=" flex flex-col text-center h-screen">
+
+          <div className=" absolute w-screen z-50 mt-24 xl:mt-40  sm:pt-6">
+              <Introduction />
+              <Link href="/contactme">
+                <button class="transition duration-300 ease-in-out bg-transparent hover:bg-yellow-500 text-yellow-600 font-semibold hover:text-white py-2 px-4 border border-yellow-600 hover:border-transparent rounded-sm mt-8 text-2xl lg:4xl">
+                  Let's Talk
+                </button>
+              </Link>
           </div>
+                          {/* Background Animation */}
 
-                    {/* Background Animation */}
-          <div className="">
             <BackgroundAnimation className="object-cover z-10 h-100 w-full absolute" />
-          </div>
 
         </main>
 
-                       {/* FOOTER */}
+
+        {/* FOOTER */}
         <div className="absolute bottom-0   h-20 w-screen  bg-gradient-to-t from-[#06202A] text-yellow-600 items-center text-center flex">
           <div className="w-screen items-center flex justify-center space-x-5 ">
             <Link href="https://github.com/clintzy101" passHref={true}>

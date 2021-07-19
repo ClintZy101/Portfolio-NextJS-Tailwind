@@ -17,11 +17,14 @@ const Header = () => {
 
 
             <div className="flex space-x-5">
-                <div className="">
-                    <NavOptions title="Home" />
-                    <TiHomeOutline size={32}
-                        className="transition duration-300 ease-in-out p-px  cursor-pointer  md:hidden hover:scale-105 hover:text-yellow-500 hover:border hover:border-yellow-500 rounded-sm" />
-                </div>
+                <Link href="/">
+                    <div className="">
+                        <NavOptions title="Home" />
+                        <TiHomeOutline size={32}
+                            className="transition duration-300 ease-in-out p-px  cursor-pointer  md:hidden hover:scale-105 hover:text-yellow-500 hover:border hover:border-yellow-500 rounded-sm" />
+                    </div>
+                </Link>
+
                 <div>
                     <NavOptions title="Projects" />
                     <TiLightbulb size={32}
