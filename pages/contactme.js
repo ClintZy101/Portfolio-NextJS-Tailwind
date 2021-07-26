@@ -2,9 +2,7 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 import Header from '../components/Header';
 import BackgroundAnimation from '../components/Background';
-import { AiFillGithub } from 'react-icons/ai';
-import { FaFacebook, FaTwitter } from 'react-icons/fa';
-import Link from 'next/link';
+
 
 
 export default function Contact() {
@@ -22,14 +20,14 @@ export default function Contact() {
   }
 
   return (
-    <div className="relative bg-dark-bg z-0">
+    <div className="relative bg-dark-bg z-0 ">
       <Header />
 
 
       <main className="  relative text-center">
 
                     {/* CONTACT FORM  */}
-        <div className=" absolute  w-screen z-50 mt-7  ">
+        <div className=" absolute  w-screen z-50 mt-10  ">
           
 
           <form className="" onSubmit={sendEmail} 
@@ -47,9 +45,8 @@ export default function Contact() {
             </div>
             <div>
               <textarea type="text" name="message" placeholder="Message" 
-              rows={5}
-              // cols={5}
-              className="bg-transparent text-white outline-none w-full h-10 items-center flex border border-yellow-600 p-2"></textarea>
+              // rows={3}
+              className="h-20 bg-transparent text-white outline-none w-full items-center flex border border-yellow-600 p-2"></textarea>
             </div>
             <input
               type="submit"
@@ -66,22 +63,7 @@ export default function Contact() {
         </div>
       </main>
 
-      {/* FOOTER */}
-      <div className="absolute bottom-0   h-20 w-screen  bg-gradient-to-t from-[#06202A] text-yellow-600 items-center text-center flex">
-        <div className="w-screen items-center flex justify-center space-x-5 ">
-          <Link href="https://github.com/clintzy101" passHref={true}>
-            <AiFillGithub size={32} className="cursor-pointer hover:text-yellow-500 hover:scale-110 transition duration-300 ease-in-out" />
-          </Link>
-          <Link href="https://www.facebook.com/clinton.taypoc" passHref={true}>
-            <FaFacebook size={32} className="cursor-pointer hover:text-yellow-500 hover:scale-110 transition duration-300 ease-in-out" />
-          </Link>
-          <Link href="https://twitter.com/Clint83115277" passHref={true}>
-            <FaTwitter size={32} className="cursor-pointer hover:text-yellow-500 hover:scale-110 transition duration-300 ease-in-out" />
-          </Link>
 
-        </div>
-
-      </div>
     </div>
 
 
