@@ -2,10 +2,10 @@ export const projects = [
     {
       title: 'Pixexid',
       description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-        image: '/images/1.png',
+        image: '/pixexid.png',
         tags: ['Mongo', 'Express', 'React', 'Node'],
-      source: 'https://google.com',
-      visit: 'https://google.com',
+      source: 'https://github.com/orgs/Pixexidv2/dashboard',
+      visit: 'https://pixexid.com',
       id: 0,
     },
     {

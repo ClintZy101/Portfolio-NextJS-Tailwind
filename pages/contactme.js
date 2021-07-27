@@ -50,7 +50,7 @@ export default function Contact() {
             <input
               type="submit"
               value="Send Message"
-              class="transition duration-300 ease-in-out bg-transparent hover:bg-yellow-500 text-yellow-600 font-semibold hover:text-white py-2 px-4 border border-yellow-600 hover:border-transparent rounded-sm mt-6 text-2xl lg:4xl cursor-pointer w-3/4 mx-auto">
+              class="transition duration-300 ease-in-out bg-transparent hover:bg-yellow-500 text-yellow-600 font-semibold hover:text-white  border border-yellow-600 hover:border-transparent rounded-sm mt-6 text-2xl lg:4xl cursor-pointer w-3/4 mx-auto">
             </input>
           </form>
 
