@@ -20,15 +20,14 @@ export default function Contact() {
   }
 
   return (
-    <div className="relative bg-dark-bg z-0 ">
+    <div className=" bg-dark-bg z-0 ">
       <Header />
 
 
-      <main className="  relative text-center">
+      <main className="h-screen  text-center">
 
                     {/* CONTACT FORM  */}
         <div className=" absolute  w-screen z-50 mt-10  ">
-          
 
           <form className="" onSubmit={sendEmail} 
           className="bg-transparent text-white border border-yellow-600 w-3/4 mx-auto p-5 rounded-sm gap-4 grid grid-cols-1">
@@ -58,12 +57,10 @@ export default function Contact() {
         </div>
 
         {/* Background Animation */}
-        <div className="">
+       
           <BackgroundAnimation className="object-cover z-10 h-100 w-full absolute" />
-        </div>
+
       </main>
-
-
     </div>
 
 
