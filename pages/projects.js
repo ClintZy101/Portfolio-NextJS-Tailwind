@@ -8,7 +8,7 @@ const projectsPage = () => {
         <div className="bg-dark-bg">
             <Header />
             <h1 className="text-white text-2xl text-center font-bold font-mono">PROJECTS</h1>
-            <div className="mx-5">
+            <div className="px-5">
                 <Projects />
             </div>
         </div>

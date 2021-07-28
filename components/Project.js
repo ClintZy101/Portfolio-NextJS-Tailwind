@@ -5,20 +5,24 @@ import { projects } from '../components/constants/constants'
 
 const Projects = () => {
     return (
-        <div>
+        <div className="grid  md:grid-cols-2  gap-x-3 ">
             {projects.map((p, i) => {
                 return (
-                    <div className="object-contain place-items-center mt-5 container border border-yellow-600 rounded-md ">
-                        <h1 key={i} className="text-yellow-600 text-2xl text-center py-2">{p.title}</h1>
+                    <div className="object-contain place-items-center my-5 container border border-none rounded-sm bg-gray-800 hover:bg-gray-700 ">
+                        <h1 key={i} className="text-white text-2xl  text-center py-2">{p.title}</h1>
 
-                        <img
-                            // width={400} height={300}
-                            src={p.image} className="" />
                         <p className="text-white text-justify px-5 py-2">{p.description}</p>
 
-                        <div className="flex flex-wrap text-white font-bold justify-center py-2">
+                        <img 
+                        width={700}
+                        height={500}
+                        src={p.image} className="max-h-96 w-full" />
+
+                       
+
+                        <div className="flex flex-wrap text-white font-bold justify-center py-2 my-2">
                             {p.tags.map((t, i) => {
-                                return <h2 className="bg-pink-500 p-2 mx-2 rounded-full" key={i}>{t}</h2>;
+                                return <h2 className="bg-gray-600 p-2 mx-2 rounded-full text-center" key={i}>{t}</h2>;
                             })}
                         </div>
                         <div className="flex m-5 justify-around">
@@ -28,7 +32,7 @@ const Projects = () => {
                                 </button >
                             </Link>
                             <Link href={p.visit}>
-                                <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-5 rounded-md cursor-pointer">
+                                <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-5 rounded-md cursor-pointer">
                                     Visit
                                 </button>
                             </Link>

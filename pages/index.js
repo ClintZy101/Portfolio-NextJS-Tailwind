@@ -21,7 +21,7 @@ export default function Home() {
                                 {/* LANDING  */}
         <main className=" flex flex-col text-center h-screen">
 
-          <div className=" absolute w-screen z-50 mt-24 xl:mt-40  sm:pt-6">
+          <div className=" absolute w-screen z-50 mt-24 xl:mt-30  sm:pt-6">
               <Introduction />
               <Link href="/contactme">
                 <button class="transition duration-300 ease-in-out bg-transparent hover:bg-yellow-500 text-yellow-600 font-semibold hover:text-white py-2 px-4 border border-yellow-600 hover:border-transparent rounded-sm mt-8 text-2xl lg:4xl">
