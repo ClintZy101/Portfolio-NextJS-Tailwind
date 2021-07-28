@@ -11,8 +11,8 @@ const Header = () => {
         <header className="font-sans font-semibold flex items-center justify-between  text-yellow-600 p-5  text-xl lg:text-2xl  ">
             <Link href="/">
                 <span className="items-center  flex cursor-pointer hover:text-yellow-500 transition duration-300 ease-in-out text-2xl lg:text-3xl">
-                    <FiCommand className="mx-px" />
-                    <h1 className="font-serif">CT</h1>
+                    {/* <FiCommand className="mx-px" /> */}
+                    <h1 className="font-serif">{'</>'}CT</h1>
                 </span>
             </Link>
 
@@ -28,7 +28,7 @@ const Header = () => {
                 </Link>
 
                 <Link href="/projects">
-                    <div>
+                    <div className="">
                         <NavOptions title="Projects" />
                         <TiLightbulb size={32}
                             className="transition duration-300 ease-in-out  p-px cursor-pointer  md:hidden hover:scale-105 hover:text-yellow-500 hover:border hover:border-yellow-500 rounded-sm" />
@@ -42,7 +42,7 @@ const Header = () => {
                             className="transition duration-300 ease-in-out p-px  cursor-pointer  md:hidden hover:scale-105 hover:text-yellow-500 hover:border hover:border-yellow-500 rounded-sm" />
                 </div>
 
-                <div>
+                <div className="">
                     <NavOptions title="About" />
                     <TiUserOutline size={32}
                         className="transition duration-300 ease-in-out  p-px cursor-pointer  md:hidden hover:scale-105 hover:text-yellow-500 hover:border hover:border-yellow-500 rounded-sm" />

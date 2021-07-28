@@ -9,13 +9,13 @@ const Projects = () => {
             {projects.map((p, i) => {
                 return (
                     <div className="object-contain place-items-center my-5 container border border-none rounded-sm bg-gray-800 hover:bg-gray-700 ">
-                        <h1 key={i} className="text-white text-2xl  text-center py-2">{p.title}</h1>
+                        <h1 key={i} className="text-white text-2xl  text-center py-2 font-semibold">{p.title}</h1>
 
-                        <p className="text-white text-justify px-5 py-2">{p.description}</p>
+                        <p className="text-white text-justify px-5 py-2 h-32">{p.description}</p>
 
                         <img 
-                        width={700}
-                        height={500}
+                        // width={700}
+                        // height={500}
                         src={p.image} className="max-h-96 w-full" />
 
                        
