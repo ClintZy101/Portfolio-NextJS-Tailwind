@@ -13,7 +13,6 @@ const Introduction = () => {
 
                 </h1>
             </div>
-            {/* <br className="hidden lg:flex" /> */}
             <br className="hidden sm:flex" />
             <div className="transition duration-300 ease-in-out text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl content-center text-gray-300 hover:text-white  ">
                 Front-End {""} Developer

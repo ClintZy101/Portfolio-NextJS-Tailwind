@@ -18,25 +18,27 @@ export default function Home() {
 
         <Header />
 
-                                {/* LANDING  */}
-        <main className=" flex flex-col text-center h-screen">
+        {/* LANDING  */}
+        <main className=" relative text-center h-screen bg-center ">
 
-          <div className=" absolute w-screen z-50 mt-40 xl:mt-42 ">
+          <div className=" absolute w-screen z-50 top-48">
+
               <Introduction />
+            
               <Link href="/contactme">
-                <button class="bg-gray-800 transition duration-300 ease-in-out bg-transparent hover:bg-yellow-500 text-yellow-600 font-semibold hover:text-white py-2 px-4 border border-yellow-600 hover:border-transparent rounded-sm mt-8 text-2xl lg:4xl">
+                <button class="bg-gray-800 transition duration-300 ease-in-out bg-transparent hover:bg-yellow-500 text-yellow-600 font-semibold hover:text-white py-2 px-4 mx-auto border border-yellow-600 hover:border-transparent rounded-sm mt-8 text-2xl lg:4xl">
                   Let's Talk
                 </button>
               </Link>
           </div>
-                          {/* Background Animation */}
+          {/* Background Animation */}
 
-            <BackgroundAnimation className="object-cover z-10 h-100 w-full absolute" />
+          <BackgroundAnimation className="object-cover z-10 w-full absolute" />
 
         </main>
 
         <Footer />
- 
+
       </div>
     </div>
   )

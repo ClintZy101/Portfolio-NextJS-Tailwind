@@ -8,7 +8,7 @@ import Link from 'next/link'
 const Header = () => {
 
     return (
-        <header className="font-sans font-semibold flex items-center justify-between  text-yellow-600 p-5  text-xl lg:text-2xl  ">
+        <header className="sticky top-0 font-sans font-semibold flex items-center justify-between  text-yellow-600 p-5  text-xl lg:text-2xl backdrop-blur-3xl ">
             <Link href="/">
                 <span className="items-center  flex cursor-pointer hover:text-yellow-500 transition duration-300 ease-in-out text-2xl lg:text-3xl">
                     {/* <FiCommand className="mx-px" /> */}
