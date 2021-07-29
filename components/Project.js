@@ -15,7 +15,7 @@ const Projects = () => {
                         <p className="text-white text-justify px-5 py-2 h-32 hover:text-yellow-600">{p.description}</p>
 
                         <img
-                        src={p.image} className=" w-full z-0  h-1/2" />
+                        src={p.image} className=" w-full z-0 " />
 
 
                         <div className="flex  text-white  hover:text-yellow-600 font-bold justify-center py-2 my-2">
